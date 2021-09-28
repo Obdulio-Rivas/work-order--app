@@ -18,10 +18,10 @@ const method_payment = [ "Efectivo", "Cheque" ];
 
 // Register font
 Font.register({ family: 'Rubik', fonts: [
-  { src: "/fonts/Rubik/Rubik-Light.ttf" }, // font-style: normal, font-weight: normal
-  { src: "/fonts/Rubik/Rubik-BlackItalic.ttf", fontStyle: 'italic' },
-  { src: "/fonts/Rubik/Rubik-Medium.ttf", fontWeight: 'medium' },
-  { src: "/fonts/Rubik/Rubik-Bold.ttf", fontWeight: 'bold' },
+  { src: "%PUBLIC_URL%/fonts/Rubik/Rubik-Light.ttf" }, // font-style: normal, font-weight: normal
+  { src: "%PUBLIC_URL%/fonts/Rubik/Rubik-BlackItalic.ttf", fontStyle: 'italic' },
+  { src: "%PUBLIC_URL%/fonts/Rubik/Rubik-Medium.ttf", fontWeight: 'medium' },
+  { src: "%PUBLIC_URL%/fonts/Rubik/Rubik-Bold.ttf", fontWeight: 'bold' },
  ]});
 
 // Create styles
@@ -240,7 +240,7 @@ export const WorkOrderPage = () => {
         <Page size="A4" style={styles.page}>
           <View style={styles.sectionGroup}>
             <View style={styles.sectionColumn}>
-              <Image src={"../logo_app.PNG"} style={styles.logo} />
+              <Image src={"%PUBLIC_URL%/logo_app.PNG"} style={styles.logo} />
               <Text style={[styles.textLeft, styles.mt_5, styles.textSmall]}>
                 Direccion: 4 calle poniente, casa #40
               </Text>
