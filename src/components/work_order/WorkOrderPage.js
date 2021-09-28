@@ -240,7 +240,7 @@ export const WorkOrderPage = () => {
         <Page size="A4" style={styles.page}>
           <View style={styles.sectionGroup}>
             <View style={styles.sectionColumn}>
-              <Image src={"logo_app.png"} style={styles.logo} />
+              <Image src={"https://react-pdf.org/images/og-banner.png"} style={styles.logo} />
               <Text style={[styles.textLeft, styles.mt_5, styles.textSmall]}>
                 Direccion: 4 calle poniente, casa #40
               </Text>
