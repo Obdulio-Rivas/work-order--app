@@ -10,7 +10,7 @@ export const Home = () => {
         </p>
         <hr />
         <p class="mb-0">
-          Cualquier fallo del sistema, por favor notificar a: <a target={'_blank'} href={'https://www.instagram.com/obdulio_jose/'}>Obdulio Rivas</a>.
+          Cualquier fallo del sistema, por favor notificar a: <a target={'_blank'} rel="noreferrer" href={'https://www.instagram.com/obdulio_jose/'}>Obdulio Rivas</a>.
         </p>
       </div>
     </div>
