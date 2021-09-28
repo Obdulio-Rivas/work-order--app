@@ -8,7 +8,7 @@ import {
   View,
   Document,
   StyleSheet,
-  PDFViewer,
+  PDFDownloadLink,
 } from "@react-pdf/renderer";
 import { getClientById } from "../../services/getClientById.js";
 import { getEmployeeById } from "../../services/getEmployeeById.js";
@@ -235,9 +235,8 @@ export const WorkOrderPage = () => {
     getEmployee(workOrder?.id_employee);
   }, [id_work_order, workOrder?.id_client, workOrder?.id_employee]);
 
-  return (
-    <PDFViewer height={"1200px"}>
-      <Document>
+  const MyDoc = () => (
+    <Document>
         <Page size="A4" style={styles.page}>
           <View style={styles.sectionGroup}>
             <View style={styles.sectionColumn}>
@@ -498,6 +497,13 @@ export const WorkOrderPage = () => {
           </View>
         </Page>
       </Document>
-    </PDFViewer>
+  )
+
+  return (
+    <PDFDownloadLink document={<MyDoc/>} fileName={`Orden de Trabajo #${workOrder?.id_work_order} .pdf`}>
+    {({ blob, url, loading, error }) =>
+      loading ? `Generando documento...` : `Descargar Orden de Trabajo #${workOrder?.id_work_order}!`
+    }
+  </PDFDownloadLink>
   );
 };
