@@ -11,8 +11,6 @@ import {
 } from "react-router-dom";
 import { WorkOrderPage } from './components/work_order/WorkOrderPage';
 
-import Upload from './components/testComponents/Upload';
-
 function App() {
 
   return (
@@ -36,7 +34,9 @@ function App() {
             <Employee/>
           </Route>
           <Route exact path="/test">
-            <Upload/>
+            <div>
+              Test components
+            </div>
           </Route>
         </div>
       </Switch>
