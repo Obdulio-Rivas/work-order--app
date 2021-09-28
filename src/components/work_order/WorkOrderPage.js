@@ -18,10 +18,10 @@ const method_payment = [ "Efectivo", "Cheque" ];
 
 // Register font
 Font.register({ family: 'Rubik', fonts: [
-  { src: "fonts/Rubik/Rubik-Light.ttf" }, // font-style: normal, font-weight: normal
-  { src: "fonts/Rubik/Rubik-BlackItalic.ttf", fontStyle: 'italic' },
-  { src: "fonts/Rubik/Rubik-Medium.ttf", fontWeight: 'medium' },
-  { src: "fonts/Rubik/Rubik-Bold.ttf", fontWeight: 'bold' },
+  { src: `${process.env.PUBLIC_URL}/fonts/Rubik/Rubik-Light.ttf` }, // font-style: normal, font-weight: normal
+  { src: `${process.env.PUBLIC_URL}/fonts/Rubik/Rubik-BlackItalic.ttf`, fontStyle: 'italic' },
+  { src: `${process.env.PUBLIC_URL}/fonts/Rubik/Rubik-Medium.ttf`, fontWeight: 'medium' },
+  { src: `${process.env.PUBLIC_URL}/fonts/Rubik/Rubik-Bold.ttf`, fontWeight: 'bold' },
  ]});
 
 // Create styles
