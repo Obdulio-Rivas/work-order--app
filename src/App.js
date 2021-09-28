@@ -4,6 +4,7 @@ import { Home } from './components/work_order/Home';
 import { WorkOrder } from './components/work_order/WorkOrder';
 import { WorkOrders } from './components/work_order/WorkOrders';
 import { Employee } from './components/employee/Employee';
+import { Client } from './components/client/Client';
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route exact path="/printWorkOrder/:id_work_order">
             <WorkOrderPage/>
+          </Route>
+          <Route exact path="/newClient">
+            <Client/>
           </Route>
           <Route exact path="/newEmployee">
             <Employee/>

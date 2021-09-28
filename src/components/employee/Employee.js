@@ -80,7 +80,7 @@ export const Employee = () => {
             type={"text"}
             name={"DUI"}
             value={employee.DUI}
-            pattern={"^[0-9]{1,8}[-][0-9]?$"}
+            pattern={"^[0-9]*$"}
             placeholder={"DUI del empleado..."}
             handlerInputChange={handlerInputChange}
           />
@@ -89,7 +89,7 @@ export const Employee = () => {
             type={"text"}
             name={"NIT"}
             value={employee.NIT}
-            pattern={"^[a-zA-Z_ ]*$"}
+            pattern={"^[0-9]*$"}
             placeholder={"NIT del empleado..."}
             handlerInputChange={handlerInputChange}
           />
@@ -116,7 +116,7 @@ export const Employee = () => {
             {employee_rol.map(({ id_employee_rol, rol }) => (
               <option
                 key={id_employee_rol}
-                value={rol}
+                value={id_employee_rol}
               >{`${rol}`}</option>
             ))}
           </Select>
