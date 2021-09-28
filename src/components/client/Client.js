@@ -33,7 +33,6 @@ export const Client = () => {
   const [client, setClient] = useState(initialClient);
   const [municipalities, setMunicipalities] = useState([]);
   const [departments, setDepartments] = useState([]);
-  const [selectedDepartment, setSelectedDepartment] = useState([]);
   const [message, setMessage] = useState('');
 
   useEffect(() => {
