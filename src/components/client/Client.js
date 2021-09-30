@@ -8,7 +8,7 @@ import { Select } from "../form/Select";
 const initialClient = {
   name: "",
   lastname: "",
-  DUI: "",
+  DUI: "-",
   NIT: "",
   address: "",
   id_municipality: 0,
@@ -108,15 +108,6 @@ export const Client = () => {
             value={client.lastname}
             pattern={"^[a-zA-Z_ ]*$"}
             placeholder={"Apellido del cliente..."}
-            handlerInputChange={handlerInputChange}
-          />
-          <Input
-            label={"DUI:"}
-            type={"text"}
-            name={"DUI"}
-            value={client.DUI}
-            pattern={"^[0-9-]*$"}
-            placeholder={"DUI"}
             handlerInputChange={handlerInputChange}
           />
           <Input
