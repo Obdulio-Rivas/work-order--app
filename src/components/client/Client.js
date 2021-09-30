@@ -86,7 +86,7 @@ export const Client = () => {
             name={"name"}
             value={client.name}
             pattern={"^[a-zA-Z_ ]*$"}
-            placeholder={"Nombre del empleado..."}
+            placeholder={"Nombre del cliente..."}
             handlerInputChange={handlerInputChange}
           />
           <Input
@@ -95,7 +95,7 @@ export const Client = () => {
             name={"lastname"}
             value={client.lastname}
             pattern={"^[a-zA-Z_ ]*$"}
-            placeholder={"Apellido del empleado..."}
+            placeholder={"Apellido del cliente..."}
             handlerInputChange={handlerInputChange}
           />
           <Input
@@ -103,7 +103,7 @@ export const Client = () => {
             type={"text"}
             name={"DUI"}
             value={client.DUI}
-            pattern={"^[0-9]*$"}
+            pattern={"^[0-9-]*$"}
             placeholder={"DUI"}
             handlerInputChange={handlerInputChange}
           />
@@ -112,7 +112,7 @@ export const Client = () => {
             type={"text"}
             name={"NIT"}
             value={client.NIT}
-            pattern={"^[0-9]*$"}
+            pattern={"^[0-9-]*$"}
             placeholder={"NIT"}
             handlerInputChange={handlerInputChange}
           />
