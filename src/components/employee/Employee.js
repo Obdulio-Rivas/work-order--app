@@ -21,6 +21,14 @@ const employee_rol = [
     id_employee_rol: 2,
     rol: "Soldador",
   },
+  {
+    id_employee_rol: 3,
+    rol: "Mecanico",
+  },
+  {
+    id_employee_rol: 4,
+    rol: "Administrativo",
+  },
 ];
 
 export const Employee = () => {
@@ -80,7 +88,7 @@ export const Employee = () => {
             type={"text"}
             name={"DUI"}
             value={employee.DUI}
-            pattern={"^[0-9]*$"}
+            pattern={"^[0-9-]*$"}
             placeholder={"DUI del empleado..."}
             handlerInputChange={handlerInputChange}
           />
