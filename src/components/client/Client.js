@@ -29,7 +29,7 @@ const company_types = [
   {
     id_company_type: 3,
     company_type: "Reparacion mecanica",
-  }
+  },
   {
     id_company_type: 4,
     company_type: "Venta de productos lacteos",
