@@ -7,7 +7,7 @@ const initialEmployee = {
   name: "",
   lastname: "",
   DUI: "",
-  NIT: "",
+  NIT: "-",
   salary: 0,
   employee_rol: 0,
 };
@@ -82,15 +82,6 @@ export const Employee = () => {
             value={employee.DUI}
             pattern={"^[0-9]*$"}
             placeholder={"DUI del empleado..."}
-            handlerInputChange={handlerInputChange}
-          />
-          <Input
-            label={"NIT:"}
-            type={"text"}
-            name={"NIT"}
-            value={employee.NIT}
-            pattern={"^[0-9]*$"}
-            placeholder={"NIT del empleado..."}
             handlerInputChange={handlerInputChange}
           />
         </div>
