@@ -20,11 +20,23 @@ const initialClient = {
 const company_types = [
   {
     id_company_type: 1,
-    company_type: "Tipo 1",
+    company_type: "Transporte",
   },
   {
     id_company_type: 2,
-    company_type: "Tipo 2",
+    company_type: "Taller",
+  },
+  {
+    id_company_type: 2,
+    company_type: "Reparacion mecanica",
+  },
+  {
+    id_company_type: 2,
+    company_type: "Venta de productos lacteos",
+  },
+  {
+    id_company_type: 2,
+    company_type: "Venta de frutas y verduras",
   },
 ];
 
@@ -158,7 +170,7 @@ export const Client = () => {
             type={"text"}
             name={"registry_number"}
             value={client.registry_number}
-            pattern={"^[0-9]*$"}
+            pattern={"^[0-9-]*$"}
             placeholder={"Numero de registro..."}
             handlerInputChange={handlerInputChange}
           />
