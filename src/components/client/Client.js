@@ -27,15 +27,15 @@ const company_types = [
     company_type: "Taller",
   },
   {
-    id_company_type: 2,
+    id_company_type: 3,
     company_type: "Reparacion mecanica",
-  },
+  }
   {
-    id_company_type: 2,
+    id_company_type: 4,
     company_type: "Venta de productos lacteos",
   },
   {
-    id_company_type: 2,
+    id_company_type: 5,
     company_type: "Venta de frutas y verduras",
   },
 ];
